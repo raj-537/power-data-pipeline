@@ -1,0 +1,16 @@
+@echo off
+REM Startup script with AWS Bedrock enabled (TEMPLATE)
+REM Copy this to start-with-llm.bat and add your AWS credentials
+
+echo Starting Power Data Pipeline with AWS Bedrock LLM mode...
+
+set AWS_REGION=us-east-1
+set AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_HERE
+set AWS_SECRET_ACCESS_KEY=YOUR_SECRET_KEY_HERE
+set AWS_BEDROCK_ENABLED=true
+
+echo AWS Bedrock: ENABLED
+echo Model: Claude Sonnet 4.5
+echo.
+
+mvn spring-boot:run
